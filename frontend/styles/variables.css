@@ -1,0 +1,13 @@
+:root {
+  --font-color: rgb(211, 203, 203);
+  --background-color: #000;
+  --border-color: rgb(10, 10, 10);
+  --color-red: #e30613;
+
+  --font-body: "Manrope", Arial, Helvetica, sans-serif;
+  --font-display: "Manuka", "Arial Narrow", Arial, sans-serif;
+
+  --navbar-height: 124px;
+  --navbar-utility-height: 34px;
+  --navbar-z-index: 50;
+}
