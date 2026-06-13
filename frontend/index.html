@@ -1,50 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AFC Bournemouth</title>
-    <link rel="icon" href="../IMAGES/favicon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <a href="index.html" class="navbar__logo">
-        <img src="../IMAGES/favicon.png" alt="AFC Bournemouth crest" />
-      </a>
 
-      <div class="navbar__main">
-        <div class="navbar__utility">
-          <span class="navbar__site">AFCB.CO.UK</span>
-          <div class="navbar__utility-bar">
-            <ul class="navbar__utility-links">
-              <li>
-                <a href="#" class="navbar_links"> TICKETS </a>
-              </li>
-              <li>
-                <a href="pages/store.html" class="navbar_links"> STORE </a>
-              </li>
-              <li>
-                <a href="#" class="navbar_links"> HOSPITALITY </a>
-              </li>
-            </ul>
-            <div class="login">
-              <a href="#" class="navbar__login navbar_links">
-                LOG IN
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFC Bournemouth</title>
+  <link rel="icon" href="../IMAGES/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="../IMAGES/favicon.png" alt="AFC Bournemouth crest" />
+    </a>
+
+    <div class="navbar__main">
+      <div class="navbar__utility">
+        <span class="navbar__site">AFCB.CO.UK</span>
+
+        <div class="navbar__utility-bar">
+          <ul class="navbar__utility-links">
+            <li>
+              <a href="https://tickets.afcb.co.uk/" class="navbar__utility-link" target="_blank" rel="noopener">
+                <img src="https://www.afcb.co.uk/gc-icons/fan/ticket.svg" width="14" height="14" alt=""
+                  style="filter: brightness(0) invert(1);" />
+                TICKETS
               </a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="https://superstore.afcb.co.uk/" class="navbar__utility-link" target="_blank" rel="noopener">
+                <img src="https://www.afcb.co.uk/gc-icons/fan/store.svg" width="14" height="14" alt=""
+                  style="filter: brightness(0) invert(1);" />
+                STORE
+              </a>
+            </li>
+            <li>
+              <a href="/hospitality" class="navbar__utility-link">
+                <img src="https://www.afcb.co.uk/gc-icons/fan/hospitality.svg" width="14" height="14" alt=""
+                  style="filter: brightness(0) invert(1);" />
+                HOSPITALITY
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <nav class="navbar__inner">
-          <ul class="navbar_center">
+        <div class="navbar__login-wrap">
+          <a href="#" class="navbar__login">
+            <img src="https://www.afcb.co.uk/gc-icons/navigation/account.svg" width="16" height="16" alt=""
+              style="filter: brightness(0) invert(1);" />
+            LOG IN
+          </a>
+        </div>
+      </div>
+
+      <nav class="navbar__inner">
+        <div class="navbar__actions-spacer"></div>
+        <div class="navbar_center">
+          <ul class="navbar_center__list">
             <li><a href="#">NEWS</a></li>
             <li><a href="#">TEAMS</a></li>
             <li><a href="#">FIXTURES</a></li>
@@ -52,38 +69,28 @@
             <li><a href="#">COMMERCIAL</a></li>
             <li><a href="#">AFCBTV</a></li>
           </ul>
-          <div class="navbar__actions">
-            <a href="#" class="navbar__events"
-              ><img src="../IMAGES/navbar/events.png" alt=""
-            /></a>
+        </div>
+        <div class="navbar__actions">
+          <a href="#" class="navbar__events"><img src="../IMAGES/navbar/events.png" alt="" /></a>
 
-            <span class="navbar__divider" aria-hidden="true"></span>
-            <a href="#" class="navbar__icon" aria-label="Search">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                aria-hidden="true"
-              >
-                <circle cx="11" cy="11" r="7" />
-                <line x1="16.5" y1="16.5" x2="21" y2="21" />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="navbar__icon navbar__icon--menu"
-              aria-label="Menu"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <rect x="3" y="5" width="18" height="2" rx="1" />
-                <rect x="3" y="11" width="18" height="2" rx="1" />
-                <rect x="3" y="17" width="18" height="2" rx="1" />
-              </svg>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
-  </body>
+          <span class="navbar__divider" aria-hidden="true"></span>
+          <a href="#" class="navbar__icon" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.5" y1="16.5" x2="21" y2="21" />
+            </svg>
+          </a>
+          <a href="#" class="navbar__icon navbar__icon--menu" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="2" rx="1" />
+              <rect x="3" y="11" width="18" height="2" rx="1" />
+              <rect x="3" y="17" width="18" height="2" rx="1" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+</body>
+
 </html>
