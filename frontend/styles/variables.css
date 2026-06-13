@@ -2,12 +2,20 @@
   --font-color: rgb(211, 203, 203);
   --background-color: #000;
   --border-color: rgb(10, 10, 10);
-  --color-red: #e30613;
+  --color-red: rgb(234, 0, 41);
 
   --font-body: "Manrope", Arial, Helvetica, sans-serif;
   --font-display: "Manuka", "Arial Narrow", Arial, sans-serif;
+  /* Navbar */
+  --nav-fontcolor: 0 solid #f3f3f3;
+  --nav-fsize: 1.3rem;
+  --nav-line-height: 1.25rem;
+  --nav-height: 124px;
+  --nav-fontweight: 300;
+  --nav-utility-height: 34px;
+  --nav-z-index: 50;
+  /* utility links */
 
-  --navbar-height: 124px;
-  --navbar-utility-height: 34px;
-  --navbar-z-index: 50;
+  --ul-text-opacity: 1;
+  --utility-fcolor: rgb(255 255 255/var(--tw-text-opacity, 1));
 }
