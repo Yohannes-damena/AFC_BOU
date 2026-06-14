@@ -2,6 +2,7 @@
   --font-color: rgb(211, 203, 203);
   --background-color: #000;
   --color-red: rgb(234, 0, 41);
+  --accent-color: rgb(234, 0, 41);
 
   --font-body: "Manrope", Arial, Helvetica, sans-serif;
   --font-display: "Manuka", "Arial Narrow", Arial, sans-serif;
@@ -9,4 +10,12 @@
   --nav-height: 124px;
   --nav-z-index: 50;
   --navbar-actions-width: 160px;
+
+  /* Button colors */
+  --btn-primary-bg: rgb(234, 0, 41);
+  --btn-primary-text: #fff;
+  --btn-primary-text-hover: #fff;
+  --btn-primary-text-active: #fff;
+  --btn-primary-bg-hover: #c80028;
+  --btn-primary-bg-active: #a00020;
 }

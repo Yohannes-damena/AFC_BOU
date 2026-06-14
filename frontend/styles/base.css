@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Manuka";
+  src: url("../fonts/copyright-klim-type-foundry-not-licensed-for-desktop-use-6.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 200;
+  color: var(--font-color);
+  background: #111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

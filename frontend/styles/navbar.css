@@ -1,35 +1,3 @@
-@font-face {
-  font-family: "Manuka";
-  src: url("fonts/copyright-klim-type-foundry-not-licensed-for-desktop-use-6.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-body);
-  font-weight: 200;
-  color: var(--font-color);
-  background: #111;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 /* ── Navbar shell ── */
 .navbar {
   display: flex;
@@ -316,49 +284,4 @@ ul {
 .navbar__icon--menu svg {
   width: 22px;
   height: 22px;
-}
-
-
-/* ── News Card ── */
-.content-card__title {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #fff;
-  
-  /* Line clamp to 3 lines */
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media (min-width: 768px) {
-  .content-card__title {
-    font-size: 1.875rem;
-    -webkit-line-clamp: 4;
-  }
-}
-
-.content-meta {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 200;
-  color: var(--font-color);
-  letter-spacing: 0.02em;
-}
-
-.content-meta p {
-  margin: 0;
-}
-
-.content-meta span {
-  margin-left: 0.25rem;
 }

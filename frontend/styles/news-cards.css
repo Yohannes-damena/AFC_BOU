@@ -1,0 +1,43 @@
+/* ── News Card ── */
+.content-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
+  
+  /* Line clamp to 3 lines */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .content-card__title {
+    font-size: 1.875rem;
+    -webkit-line-clamp: 4;
+  }
+}
+
+.content-meta {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: var(--font-color);
+  letter-spacing: 0.02em;
+}
+
+.content-meta p {
+  margin: 0;
+}
+
+.content-meta span {
+  margin-left: 0.25rem;
+}

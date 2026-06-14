@@ -1,0 +1,35 @@
+/* ── Sponsor Banner ── */
+.sponsor-banner {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: var(--background-color);
+}
+
+.sponsor-banner__wrapper {
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.sponsor-banner__link {
+  display: block;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.sponsor-banner__link:hover {
+  opacity: 0.8;
+}
+
+.sponsor-banner__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 728 / 90;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .sponsor-banner {
+    padding: 1.5rem 1rem;
+  }
+}
