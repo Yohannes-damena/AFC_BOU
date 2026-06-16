@@ -18,85 +18,98 @@
   <link rel="stylesheet" href="styles/fixture-table.css" />
   <link rel="stylesheet" href="styles/news-grid.css" />
   <link rel="stylesheet" href="styles/hospitality-section.css" />
+  <link rel="stylesheet" href="styles/video-section.css" />
+  <link rel="stylesheet" href="styles/shop-section.css" />
   <link rel="stylesheet" href="styles/footer.css" />
 </head>
 
 <body>
   <header class="navbar">
-    <a href="index.html" class="navbar__logo">
+    <!-- Desktop Logo (hidden on mobile) -->
+    <a href="index.html" class="navbar__logo-desktop">
       <img src="../IMAGES/favicon.png" alt="AFC Bournemouth crest" />
     </a>
 
     <div class="navbar__main">
+      <!-- Top Utility Bar (Red) -->
       <div class="navbar__utility">
-        <span class="navbar__site">AFCB.CO.UK</span>
-
-        <div class="navbar__utility-bar">
-          <ul class="navbar__utility-links">
-            <li>
-              <a href="https://tickets.afcb.co.uk/" class="navbar__utility-link" target="_blank" rel="noopener">
-                <img src="https://www.afcb.co.uk/gc-icons/fan/ticket.svg" width="14" height="14" alt=""
-                  style="filter: brightness(0) invert(1);" />
-                TICKETS
-              </a>
-            </li>
-            <li>
-              <a href="https://superstore.afcb.co.uk/" class="navbar__utility-link" target="_blank" rel="noopener">
-                <img src="https://www.afcb.co.uk/gc-icons/fan/store.svg" width="14" height="14" alt=""
-                  style="filter: brightness(0) invert(1);" />
-                STORE
-              </a>
-            </li>
-            <li>
-              <a href="/hospitality" class="navbar__utility-link">
-                <img src="https://www.afcb.co.uk/gc-icons/fan/hospitality.svg" width="14" height="14" alt=""
-                  style="filter: brightness(0) invert(1);" />
-                HOSPITALITY
-              </a>
-            </li>
-          </ul>
+        <div class="navbar__utility-content">
+          <nav class="navbar__utility-nav">
+            <a href="#" class="navbar__utility-link navbar__utility-link--active">
+              <p>AFCB.CO.UK</p>
+            </a>
+            <a href="https://tickets.afcb.co.uk/" class="navbar__utility-link" target="_blank">
+              <img src="https://www.afcb.co.uk/gc-icons/fan/ticket.svg" width="14" height="14" alt="" 
+                   style="filter: brightness(0) invert(1);" />
+              <p>TICKETS</p>
+            </a>
+            <a href="https://superstore.afcb.co.uk/" class="navbar__utility-link" target="_blank">
+              <img src="https://www.afcb.co.uk/gc-icons/fan/store.svg" width="14" height="14" alt="" 
+                   style="filter: brightness(0) invert(1);" />
+              <p>STORE</p>
+            </a>
+            <a href="/hospitality" class="navbar__utility-link">
+              <img src="https://www.afcb.co.uk/gc-icons/fan/hospitality.svg" width="14" height="14" alt="" 
+                   style="filter: brightness(0) invert(1);" />
+              <p>HOSPITALITY</p>
+            </a>
+          </nav>
         </div>
-
-        <div class="navbar__login-wrap">
-          <a href="#" class="navbar__login">
-            <img src="https://www.afcb.co.uk/gc-icons/navigation/account.svg" width="16" height="16" alt=""
-              style="filter: brightness(0) invert(1);" />
-            LOG IN
-          </a>
-        </div>
+        <a href="#" class="navbar__login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+          <span>LOG IN</span>
+        </a>
       </div>
 
-      <nav class="navbar__inner">
-        <div class="navbar__actions-spacer"></div>
-        <div class="navbar_center">
-          <ul class="navbar_center__list">
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">TEAMS</a></li>
-            <li><a href="#">FIXTURES</a></li>
-            <li><a href="#">TICKETS</a></li>
-            <li><a href="#">COMMERCIAL</a></li>
-            <li><a href="#">AFCBTV</a></li>
-          </ul>
-        </div>
-        <div class="navbar__actions">
-          <a href="#" class="navbar__events"><img src="../IMAGES/navbar/events.png" alt="" /></a>
+      <!-- Bottom Nav Bar -->
+      <div class="navbar__bottom">
+        <div class="navbar__bottom-inner">
+          <div class="navbar__bottom-content">
+            <!-- Mobile Logo -->
+            <a href="index.html" class="navbar__logo-mobile">
+              <img src="../IMAGES/favicon.png" alt="AFC Bournemouth" />
+            </a>
 
-          <span class="navbar__divider" aria-hidden="true"></span>
-          <a href="#" class="navbar__icon" aria-label="Search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="11" cy="11" r="7" />
-              <line x1="16.5" y1="16.5" x2="21" y2="21" />
-            </svg>
-          </a>
-          <a href="#" class="navbar__icon navbar__icon--menu" aria-label="Menu">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <rect x="3" y="5" width="18" height="2" rx="1" />
-              <rect x="3" y="11" width="18" height="2" rx="1" />
-              <rect x="3" y="17" width="18" height="2" rx="1" />
-            </svg>
-          </a>
+            <!-- Main Navigation Links -->
+            <div class="navbar__nav-container">
+              <nav class="navbar__nav">
+                <ul class="navbar__nav-list">
+                  <li><a href="#" class="navbar__nav-link">NEWS</a></li>
+                  <li><a href="#" class="navbar__nav-link">TEAMS</a></li>
+                  <li><a href="#" class="navbar__nav-link">FIXTURES</a></li>
+                  <li><a href="#" class="navbar__nav-link">TICKETS</a></li>
+                  <li><a href="#" class="navbar__nav-link">COMMERCIAL</a></li>
+                  <li><a href="#" class="navbar__nav-link">AFCBTV</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Actions (Events, Search, Menu) -->
+            <div class="navbar__actions">
+              <div class="navbar__events-wrap">
+                <a href="#" class="navbar__events">
+                  <img src="../IMAGES/navbar/events.png" alt="Events" />
+                </a>
+              </div>
+              <a href="#" class="navbar__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7" />
+                  <line x1="16.5" y1="16.5" x2="21" y2="21" />
+                </svg>
+              </a>
+              <a href="#" class="navbar__icon navbar__icon--menu">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="3" y="5" width="18" height="2" rx="1" />
+                  <rect x="3" y="11" width="18" height="2" rx="1" />
+                  <rect x="3" y="17" width="18" height="2" rx="1" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
 
@@ -145,7 +158,6 @@
     </div>
   </section>
 
-  <!-- Fixture + League Table Grid -->
 
 
   <!-- News Grid Section -->
@@ -401,6 +413,197 @@
         <img
           src="https://images.gc.afcbournemouthservices.co.uk/fit-in/1600x1600/bc030f90-4865-11f1-b9b9-87f03341a639.png"
           alt="" class="hospitality-image-grid__item" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Now Video Section -->
+  <section class="video-section">
+    <div class="video-section__bg">
+      <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/4800x4800/1d9180f0-f610-a11f0-bed1-4953b3d9e201.webp" 
+           alt="" />
+    </div>
+    <div class="video-section__container">
+      <header class="video-section__header">
+        <h2 class="video-section__title">Watch Now - AFC Bournemouth's Boot Room</h2>
+      </header>
+      <div class="video-section__content">
+        <div class="video-section__grid">
+          <!-- Video Card 1 -->
+          <a href="https://www.afcb.co.uk/videos/e26c750a-09de-48b6-be43-1fe9439a78f7" 
+             rel="noopener noreferrer" 
+             class="video-card">
+            <div class="video-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/d4f03a70-0cea-11f1-96f7-5520cc78848c.webp" 
+                   alt="Video" 
+                   class="video-card__image" />
+            </div>
+            <div class="video-card__content">
+              <div class="video-card__actions">
+                <span class="btn-watch">
+                  <span class="btn-watch__inner">
+                    <span class="btn-watch__text">WATCH NOW</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Video Card 2 -->
+          <a href="https://www.afcb.co.uk/videos/6b25061e-50fc-4e77-bb4f-e0bade3f8a33" 
+             rel="noopener noreferrer" 
+             class="video-card">
+            <div class="video-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/d4ed5440-0cea-11f1-929a-9f227c8066b5.webp" 
+                   alt="Video" 
+                   class="video-card__image" />
+            </div>
+            <div class="video-card__content">
+              <div class="video-card__actions">
+                <span class="btn-watch">
+                  <span class="btn-watch__inner">
+                    <span class="btn-watch__text">WATCH NOW</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Now Section -->
+  <section class="shop-section">
+    <div class="shop-section__bg">
+      <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/4800x4800/1d9180f0-f610-11f0-bed1-4953b3d9e201.webp" 
+           alt="" />
+    </div>
+    <div class="shop-section__container">
+      <header class="shop-section__header">
+        <h2 class="shop-section__title">Shop Now</h2>
+      </header>
+      
+      <div class="shop-section__content">
+        <!-- Product Grid -->
+        <div class="shop-product-grid">
+          <!-- Product 1: Home Kit -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/home-kit-8" 
+             target="_blank" 
+             class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/aa413dd0-616c-11f0-9fc0-39670193717b.webp" 
+                   alt="25/26 HOME KIT" 
+                   class="product-card__image" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <div class="product-card__name">25/26 HOME KIT</div>
+                <div class="product-card__price-wrap">
+                  <span class="product-card__price">£65</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 2: Away Kit -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/away-kit-9" 
+             target="_blank" 
+             class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/2453e350-6ca0-11f0-a5aa-338c457b54b3.webp" 
+                   alt="25/26 AWAY KIT" 
+                   class="product-card__image" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <div class="product-card__name">25/26 AWAY KIT</div>
+                <div class="product-card__price-wrap">
+                  <span class="product-card__price">£65</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 3: Third Kit -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/third-kit-10" 
+             target="_blank" 
+             class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/f44dce20-76c5-11f0-8c3d-7f49c5ea807d.webp" 
+                   alt="25/26 THIRD KIT" 
+                   class="product-card__image" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <div class="product-card__name">25/26 THIRD KIT</div>
+                <div class="product-card__price-wrap">
+                  <span class="product-card__price">£65</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Promo Grid -->
+        <div class="shop-promo-grid">
+          <!-- Promo 1 -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/spring-fashion-all" 
+             target="_blank" 
+             class="promo-card">
+            <div class="promo-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/3a012ff0-34b4-11f1-ae5b-6dbfd01e2812.webp" 
+                   alt="Spring Fashion" 
+                   class="promo-card__image" />
+            </div>
+            <div class="promo-card__content">
+              <div class="promo-card__actions"></div>
+            </div>
+          </a>
+
+          <!-- Promo 2 -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/VARNFLJSY" 
+             target="_blank" 
+             class="promo-card">
+            <div class="promo-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/a0a34650-13fb-11f1-a2fb-edae44995598.gif" 
+                   alt="Product" 
+                   class="promo-card__image" />
+              <div class="promo-card__gradient"></div>
+            </div>
+            <div class="promo-card__content">
+              <div class="promo-card__actions"></div>
+            </div>
+          </a>
+
+          <!-- Promo 3 -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/new-era-headwear" 
+             target="_blank" 
+             class="promo-card">
+            <div class="promo-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/2e9e98d0-2787-11f1-931c-a5ddbed6d62c.webp" 
+                   alt="New Era Headwear" 
+                   class="promo-card__image" />
+            </div>
+            <div class="promo-card__content">
+              <div class="promo-card__actions"></div>
+            </div>
+          </a>
+
+          <!-- Promo 4 -->
+          <a href="https://superstore.afcb.co.uk/afc-bournemouth/peppa-pig" 
+             target="_blank" 
+             class="promo-card">
+            <div class="promo-card__image-wrap">
+              <img src="https://images.gc.afcbournemouthservices.co.uk/fit-in/2400x1350/a583a0e0-b8af-11f0-bfb0-f7fadd8bfbe5.gif" 
+                   alt="Peppa Pig" 
+                   class="promo-card__image" />
+            </div>
+            <div class="promo-card__content">
+              <div class="promo-card__actions"></div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
