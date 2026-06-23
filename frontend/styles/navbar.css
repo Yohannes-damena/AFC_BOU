@@ -369,14 +369,14 @@
 
 .navbar__events-wrap::after {
   content: '';
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.814);
   height: 24px;
   margin-left: auto;
 }
 
 .navbar__events {
   width: 60px;
-  height: auto;
+  height: 25px;
 }
 
 .navbar__events img {
