@@ -101,7 +101,7 @@
   font-family: var(--font-body);
   font-weight: 300;
   color: #f9fafb;
-  background: #030712;
+  background: #ea0029;
   font-size: 0.75rem; /* text-xs */
 }
 
@@ -296,12 +296,13 @@
   margin-right: 1rem;
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: 1rem; /* text-heading-md */
+  font-size: 1.125rem; /* increased: text-heading-lg */
 }
 
 @media (min-width: 1280px) {
   .navbar__nav {
     display: flex;
+    font-size: 1.5rem; /* larger on wide screens */
   }
 }
 
@@ -321,7 +322,6 @@
   position: relative;
   padding: 0 1rem;
   min-height: 56px;
-  white-space: nowrap;
   font-weight: 300;
   color: #fff;
   transition: all 0.5s;
@@ -356,7 +356,7 @@
 .navbar__actions {
   display: flex;
   align-items: center;
-  justify-end;
+  justify-content: flex-end;
 }
 
 .navbar__events-wrap {
@@ -369,14 +369,14 @@
 
 .navbar__events-wrap::after {
   content: '';
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.814);
   height: 24px;
   margin-left: auto;
 }
 
 .navbar__events {
   width: 60px;
-  height: auto;
+  height: 25px;
 }
 
 .navbar__events img {
@@ -400,6 +400,12 @@
 
 .navbar__icon:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar__icon img, .navbar__login img {
+  filter: invert(1);
+  width: 24px;
+  height: 24px;
 }
 
 .navbar__icon svg {
